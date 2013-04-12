@@ -1,7 +1,7 @@
 " Vim color file
 " Maintainer:       John Kaul
 " Created On:       2003 Mar 19
-" Last Change:      2013 Jan 16
+" Last Change:      2013 April 12
 
 " Notes:
 " This started as a fadded version of of the 'Chocolate Liquor', but
@@ -28,7 +28,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "faded-black"
+let g:colors_name = "fadded-black"
 
 
 " Vim >= 7.0 specific colors
@@ -53,11 +53,11 @@ hi DiffAdd      ctermbg=DarkGreen   ctermfg=White       guibg=DarkGreen     guif
 hi DiffText     ctermbg=LightCyan   ctermfg=Yellow      guibg=Lightblue     guifg=Yellow                        gui=NONE
 hi DiffChange   ctermbg=LightBlue   ctermfg=White       guibg=LightBlue3    guifg=White                         gui=NONE
 hi Constant     ctermbg=NONE        ctermfg=Red         guibg=NONE          guifg=#872e30                       gui=NONE
-hi StatusLine   ctermbg=DarkGrey    ctermfg=Red         guibg=DarkGrey      guifg=LightRed                      gui=italic
-hi StatusLineNC ctermbg=Darkgrey    ctermfg=black       guibg=DarkGrey      guifg=Black                         gui=NONE
+hi StatusLine   ctermbg=DarkGrey    ctermfg=Red         guibg=#2a2a2a       guifg=#eeeeee                       gui=italic
+hi StatusLineNC ctermbg=Darkgrey    ctermfg=black       guibg=#515151       guifg=Black                         gui=NONE
 hi VertSplit    ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=Grey                          gui=NONE
 hi Visual       ctermbg=DarkRed     ctermfg=Red         guibg=#6b6b6b       guifg=#431818  term=reverse
-hi Search       ctermbg=NONE        ctermfg=LightGrey   guibg=#80363a       guifg=#a69c89                       gui=NONE
+hi Search       ctermbg=NONE        ctermfg=LightGrey   guibg=#bf9966       guifg=#03080F                       gui=NONE
 hi Label        ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=#ffc0c0                       gui=NONE
 hi LineNr       ctermbg=NONE        ctermfg=Red         guibg=NONE          guifg=#A39274                       gui=NONE
 
@@ -66,8 +66,8 @@ hi MoreMsg      ctermbg=NONE        ctermfg=DarkGreen   guibg=NONE          guif
 hi question     ctermbg=NONE        ctermfg=DarkGreen   guibg=NONE          guifg=SeaGreen term=standout        gui=bold
 
 " //-- Syntax group --//
-hi Comment      ctermbg=NONE        ctermfg=DarkGreen   guibg=NONE          guifg=#545f3a                      gui=italic
-hi PreProc      ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=#bbaccc                      gui=NONE
+hi Comment      ctermbg=NONE        ctermfg=DarkGreen   guibg=NONE          guifg=#5c683f                      gui=italic
+hi PreProc      ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=#387e7e                      gui=NONE
 hi Statement    ctermbg=NONE        ctermfg=Yellow      guibg=NONE          guifg=#ab952b                      gui=NONE
 hi Type         ctermbg=NONE        ctermfg=darkmagenta guibg=NONE          guifg=#ba5bdb                      gui=NONE
 hi Identifier   ctermbg=NONE        ctermfg=Yellow      guibg=NONE          guifg=#737d95                      gui=NONE
