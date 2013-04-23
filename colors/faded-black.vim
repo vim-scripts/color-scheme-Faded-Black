@@ -1,7 +1,7 @@
 " Vim color file
-" Maintainer:       John Kaul
-" Created On:       2003 Mar 19
-" Last Change:      2013 April 12
+" Maintainer:           John Kaul
+" Created On:           2003 Mar 19
+" File Last Updated:    04.23.13 10:49:16 AM
 
 " Notes:
 " This started as a fadded version of of the 'Chocolate Liquor', but
@@ -11,6 +11,9 @@
 "
 " Only values that differ from defaults are specified.
 "
+" I hope you enjoy...
+"
+" Log:
 " 01.07.05 update: Tweeked a few colors and added terminal colors.
 " Please note that I didnt go thru the terminal colors very well. (I
 " just added a few ''dif.  then normal'' colors) If you use the terminal
@@ -21,14 +24,20 @@
 " 01.16.13 update: Changed a few more colors (still havent looked at the
 " terminal colors).
 "
-" I hope you enjoy...
+" 04.12.13 update:
+"    o  Search background color
+"    o  Include statement foreground color
+"    o  Status lines colors
+"
+" 04.23.13 update: Added and adjusted some terminal colors.
+"
 
 set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "fadded-black"
+let g:colors_name = "faded-black"
 
 
 " Vim >= 7.0 specific colors
@@ -57,7 +66,7 @@ hi StatusLine   ctermbg=DarkGrey    ctermfg=Red         guibg=#2a2a2a       guif
 hi StatusLineNC ctermbg=Darkgrey    ctermfg=black       guibg=#515151       guifg=Black                         gui=NONE
 hi VertSplit    ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=Grey                          gui=NONE
 hi Visual       ctermbg=DarkRed     ctermfg=Red         guibg=#6b6b6b       guifg=#431818  term=reverse
-hi Search       ctermbg=NONE        ctermfg=LightGrey   guibg=#bf9966       guifg=#03080F                       gui=NONE
+hi Search       ctermbg=Yellow      ctermfg=LightGrey   guibg=#bf9966       guifg=#03080F                       gui=NONE
 hi Label        ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=#ffc0c0                       gui=NONE
 hi LineNr       ctermbg=NONE        ctermfg=Red         guibg=NONE          guifg=#A39274                       gui=NONE
 
@@ -67,13 +76,13 @@ hi question     ctermbg=NONE        ctermfg=DarkGreen   guibg=NONE          guif
 
 " //-- Syntax group --//
 hi Comment      ctermbg=NONE        ctermfg=DarkGreen   guibg=NONE          guifg=#5c683f                      gui=italic
-hi PreProc      ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=#387e7e                      gui=NONE
+hi PreProc      ctermbg=NONE        ctermfg=darkcyan    guibg=NONE          guifg=#387e7e                      gui=NONE
 hi Statement    ctermbg=NONE        ctermfg=Yellow      guibg=NONE          guifg=#ab952b                      gui=NONE
 hi Type         ctermbg=NONE        ctermfg=darkmagenta guibg=NONE          guifg=#ba5bdb                      gui=NONE
 hi Identifier   ctermbg=NONE        ctermfg=Yellow      guibg=NONE          guifg=#737d95                      gui=NONE
 hi Special      ctermbg=NONE        ctermfg=Green       guibg=NONE          guifg=#5b5646                      gui=NONE
-hi Todo         ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=LightBlue                    gui=bold,italic
-hi Number       ctermbg=NONE        ctermfg=NONE        guibg=NONE          guifg=lightblue                    gui=NONE
+hi Todo         ctermbg=NONE        ctermfg=darkmagenta guibg=NONE          guifg=LightBlue                    gui=bold,italic
+hi Number       ctermbg=NONE        ctermfg=darkcyan    guibg=NONE          guifg=lightblue                    gui=NONE
 "
 " Lisp stuff
 hi lispAtomMark  ctermbg=NONE       ctermfg=cyan        guifg=darkcyan      guibg=NONE                         gui=NONE
@@ -85,5 +94,5 @@ hi lispNumber    ctermbg=NONE       ctermfg=DarkGreen   guifg=lightblue     guib
 " hi Underlined
 
 " //-- Fold --//
-hi Folded       ctermbg=NONE        ctermfg=NONE        guibg=#001a33       guifg=#a69c89                      gui=italic
+hi Folded       ctermbg=darkgray    ctermfg=NONE        guibg=#001a33       guifg=#a69c89                      gui=italic
 hi FoldColumn   ctermbg=NONE        ctermfg=Yellow      guibg=#6699CC       guifg=#0000EE                      gui=NONE
